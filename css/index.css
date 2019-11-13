@@ -400,7 +400,8 @@ font-size: 75%;
 
     #top-nav{
         
-        flex-flow: column-reverse wrap;
+        flex-flow: column nowrap;
+
     }
 
     #top-nav a {
@@ -413,6 +414,7 @@ font-size: 75%;
 
     #top-nav .logo {
         margin-bottom: 2%;
+        order: -1;
     }
 
 
