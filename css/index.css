@@ -156,16 +156,20 @@ h5 {
     margin-bottom: 10px;
 }
 
+
+/*Index page styling - desktop*/
+
 body {
     width: 90%;
     margin: 1% 5% 3% 5%
 }
 
 #top-nav{
-    margin: 0 0 0 5%;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
 }
     
@@ -175,7 +179,7 @@ body {
     color:gray;
 }
     
-#top-nav a:hover { /*add some automation when hovering over a navigation selection Stretch Goal*/
+#top-nav a:hover { 
     cursor: pointer;
     text-decoration-line: overline;    
 }
@@ -231,21 +235,16 @@ body {
     text-align: center;
 }
 
-.line {
-    height: 2px;
-    background: black;
-    margin: 20px 0px 20px 0px;
-    }
 
 #double-snippets {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 0% 0% 1% 0%;
+    margin: 0% -1% 1% -1%;
 }
 
 #double-snippets article {
-    padding: 0 .5% 0 .5%;
+    padding: 0 1% 0 1%;
 }
 
 
@@ -260,14 +259,12 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 1% 0% 2% 0%;
+    margin: 1% -1% 2% -1%;
     }
 
 #triple-snippets article {
-    padding: 0 .25% 0 .25%;
+    padding: 0 1% 0 1%;
 }
-
-
 
 
 .snippets-3x1-contacts {
@@ -290,6 +287,73 @@ text-align: center;
 font-size: 75%;
 }
 
+/*Services page styling - desktop*/
+
+#services {
+    margin-top: 1%;
+}
+
+#services header {
+	margin-bottom: 2%;
+	text-align: left;
+}
+
+#services header h2 {
+	font-size: 200%;
+}
+
+#services .service-area a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border: solid 1px black;
+	padding: .5% 10% .5% 10%;
+}
+
+#services a:hover { 
+	cursor: pointer;
+	text-shadow: 1px 1px 2px gray;    
+}
+
+#service-areas {
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-between;
+    margin: -1%;
+}
+
+.service-area {
+	max-width: 48%;
+	max-height: 48%;
+	margin: 1%;
+	border: solid 1px black;
+	padding: 1% 2% 2% 2%;
+	background-color: lightgray;
+}
+
+#services footer {
+	text-align: left;
+	display: flex;
+}
+
+#services footer div {
+	max-width: 47%;
+	margin: 0 5% 0 0;
+}
+
+#services footer nav ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	line-height: 150%;
+}
+
+
+#services footer a {
+	text-decoration: none;
+	color: black;
+}
+
+/*Begin tablet spyle*/
 @media (max-width: 800px) {
 
     #top-nav{
@@ -307,7 +371,7 @@ font-size: 75%;
         margin: 0 auto;
     }
 
-    #top-nav a:hover { /*add some automation when hovering over a navigation selection Stretch Goal*/
+    #top-nav a:hover { 
         cursor: none;
         text-decoration-line: none;    
     }
@@ -321,9 +385,17 @@ font-size: 75%;
         display: none;
     }
 
+    .services-info-img {
+        display: none;
+    }
 
+    #services footer div {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 
+/*Begin mobile style*/
 @media (max-width: 500px) {
 
     #top-nav{
@@ -371,5 +443,19 @@ font-size: 75%;
         padding: 0;
         margin-top: 6%;
     }
+
+    #service-areas {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .service-area {
+        max-width: 100%;
+        max-height: 48%;
+        margin: 2% 0 0 0;
+        border: solid 1px black;
+        padding: 1% 2% 2% 2%;
+        background-color: lightgray;
 
 }
