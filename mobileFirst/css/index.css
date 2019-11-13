@@ -1,0 +1,456 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Oswald', sans-serif; /* Add a new font family from Google*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+/*Index page styling - desktop*/
+
+body {
+    width: 90%;
+    margin: 1% 5% 3% 5%
+}
+
+#top-nav{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+#top-nav a {
+    width: 14%;
+    text-decoration: none;
+    color:gray;
+}
+    
+#top-nav a:hover { 
+    cursor: pointer;
+    text-decoration-line: overline;    
+}
+
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#intro {
+    width: 100%;
+    margin: 8% 0% 3% 0%;
+    display: flex;
+    flex-flow: row nowrap;
+    }
+
+
+
+.intro-text {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+}
+
+
+.intro-text h2 {
+    margin: 0 auto;
+    font-size: 450%;
+}
+
+
+
+    
+.intro-text button {
+    margin: 0 auto;
+    background-color: white;
+    border: solid 1px black;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.intro-img {
+    margin: 0 auto;
+    width: 25%;
+    min-width: 100px;
+    text-align: center;
+}
+
+
+#double-snippets {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0% -1% 1% -1%;
+}
+
+#double-snippets article {
+    padding: 0 1% 0 1%;
+}
+
+
+.middle-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border: groove 2px darkblue;
+}
+
+#triple-snippets {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 1% -1% 2% -1%;
+    }
+
+#triple-snippets article {
+    padding: 0 1% 0 1%;
+}
+
+
+.snippets-3x1-contacts {
+display: inline-block;
+text-align: right;
+margin: 0 2% 0 5%;
+width: 25%;
+}
+
+
+#triple-snippets-contacts {
+margin-top: 1%;
+margin-bottom: 3%;
+}
+
+
+#cr {
+margin: 2% 0% 0% 0%;
+text-align: center;
+font-size: 75%;
+}
+
+/*Services page styling - desktop*/
+
+#services {
+    margin-top: 1%;
+}
+
+#services header {
+	margin-bottom: 2%;
+	text-align: left;
+}
+
+#services header h2 {
+	font-size: 200%;
+}
+
+#services .service-area a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border: solid 1px black;
+	padding: .5% 10% .5% 10%;
+}
+
+#services a:hover { 
+	cursor: pointer;
+	text-shadow: 1px 1px 2px gray;    
+}
+
+#service-areas {
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-between;
+    margin: -1%;
+}
+
+.service-area {
+	max-width: 48%;
+	max-height: 48%;
+	margin: 1%;
+	border: solid 1px black;
+	padding: 1% 2% 2% 2%;
+	background-color: lightgray;
+}
+
+#services footer {
+	text-align: left;
+	display: flex;
+}
+
+#services footer div {
+	max-width: 47%;
+	margin: 0 5% 0 0;
+}
+
+#services footer nav ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	line-height: 150%;
+}
+
+
+#services footer a {
+	text-decoration: none;
+	color: black;
+}
+
+/*Begin tablet spyle*/
+@media (max-width: 800px) {
+
+    #top-nav{
+        flex-flow: row wrap-reverse;
+    }
+
+    #top-nav a {
+        margin: 2%;
+        width: 12%;
+
+    }
+
+    #top-nav .logo {
+        margin: 0 auto;
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+
+    .intro-img {
+        display: none;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+
+    #services footer div {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/*Begin mobile style*/
+@media (max-width: 500px) {
+
+    #top-nav{
+        
+        flex-flow: column nowrap;
+    }
+
+    #top-nav a {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 4% 0;
+        border-bottom: solid 1px gray;
+
+    }
+
+    #top-nav .logo {
+        margin-bottom: 2%;
+        order: -1;
+    }
+
+
+    .intro-text {
+        width: 100%;
+    }
+
+
+    .intro-img {
+        display: none;
+    }
+
+    #double-snippets {
+        flex-flow: column nowrap;
+    }
+
+    #double-snippets article {
+        padding: 0;
+        margin-top: 6%;
+    }
+
+    #triple-snippets {
+        flex-flow: column nowrap;
+        
+    }
+    
+    #triple-snippets article {
+        padding: 0;
+        margin-top: 6%;
+    }
+
+    #service-areas {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .service-area {
+        max-width: 100%;
+        max-height: 48%;
+        margin: 2% 0 0 0;
+        border: solid 1px black;
+        padding: 1% 2% 2% 2%;
+        background-color: lightgray;
+    }
+}
