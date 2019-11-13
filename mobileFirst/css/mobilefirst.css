@@ -1,4 +1,4 @@
-    /* http://meyerweb.com/eric/tools/css/reset/ 
+   /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -157,7 +157,8 @@ h5 {
 }
 
 
-/*Index page styling - desktop*/
+
+/*Begin mobile style*/
 
 body {
     width: 90%;
@@ -165,31 +166,39 @@ body {
 }
 
 #top-nav{
-    margin: 0 auto;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
-    
+
 #top-nav a {
-    width: 14%;
+    margin: 2%;
     text-decoration: none;
     color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 4% 0;
+    border-bottom: solid 1px gray;
+
 }
-    
+
 #top-nav a:hover { 
     cursor: pointer;
     text-decoration-line: overline;    
 }
 
 
-.logo {
+
+#top-nav .logo {
     max-width: 100%;
     max-height: 100%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    order: -1;
 }
-
 
 #intro {
     width: 100%;
@@ -199,11 +208,10 @@ body {
     }
 
 
-
 .intro-text {
     display: flex;
     flex-flow: column nowrap;
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -212,9 +220,6 @@ body {
     font-size: 450%;
 }
 
-
-
-    
 .intro-text button {
     margin: 0 auto;
     background-color: white;
@@ -226,27 +231,25 @@ body {
     cursor: pointer;
 }
 
-
-
 .intro-img {
     margin: 0 auto;
     width: 25%;
-    min-width: 100px;
+    min-width: 50px;
     text-align: center;
+    display: none;
 }
-
 
 #double-snippets {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     margin: 0% -1% 1% -1%;
 }
 
 #double-snippets article {
-    padding: 0 1% 0 1%;
+    padding: 0;
+    margin-top: 6%;
 }
-
 
 .middle-img {
     width: 100%;
@@ -257,78 +260,80 @@ body {
 
 #triple-snippets {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     margin: 1% -1% 2% -1%;
-    }
+    
+}
 
 #triple-snippets article {
-    padding: 0 1% 0 1%;
+    padding: 0;
+    margin-top: 6%;
 }
-
 
 .snippets-3x1-contacts {
-display: inline-block;
-text-align: right;
-margin: 0 2% 0 5%;
-width: 25%;
+    display: inline-block;
+    text-align: right;
+    margin: 0 2% 0 5%;
+    width: 25%;
 }
-
-
+    
+    
 #triple-snippets-contacts {
-margin-top: 1%;
-margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 
 
 #cr {
-margin: 2% 0% 0% 0%;
-text-align: center;
-font-size: 75%;
+    margin: 2% 0% 0% 0%;
+    text-align: center;
+    font-size: 75%;
 }
 
-/*Services page styling - desktop*/
-
+/*Styling specific to services page*/
 #services {
     margin-top: 1%;
 }
 
 #services header {
-	margin-bottom: 2%;
-	text-align: left;
+    margin-bottom: 2%;
+    text-align: left;
 }
 
 #services header h2 {
-	font-size: 200%;
+    font-size: 200%;
 }
 
 #services .service-area a {
-	text-decoration: none;
-	color: black;
-	background-color: white;
-	border: solid 1px black;
-	padding: .5% 10% .5% 10%;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    padding: .5% 10% .5% 10%;
 }
 
 #services a:hover { 
-	cursor: pointer;
-	text-shadow: 1px 1px 2px gray;    
+    cursor: pointer;
+    text-shadow: 1px 1px 2px gray;    
 }
 
+
+
 #service-areas {
-	display: flex;
-	flex-flow: row wrap;
-    justify-content: space-between;
-    margin: -1%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin: 0 auto;
 }
 
 .service-area {
-	max-width: 48%;
-	max-height: 48%;
-	margin: 1%;
-	border: solid 1px black;
-	padding: 1% 2% 2% 2%;
-	background-color: lightgray;
+    max-width: 100%;
+    max-height: 48%;
+    margin: 2% 0 0 0;
+    border: solid 1px black;
+    padding: 1% 2% 2% 2%;
+    background-color: lightgray;
 }
 
 #services footer {
@@ -353,70 +358,28 @@ font-size: 75%;
 	color: black;
 }
 
-/*Begin tablet spyle*/
-@media (max-width: 800px) {
+
+
+/*Begin tablet style*/
+
+@media (min-width: 501px) {
 
     #top-nav{
         flex-flow: row wrap-reverse;
-        margin: 0 auto;
     }
 
     #top-nav a {
         margin: 2%;
         width: 12%;
+        padding-bottom: 0;
+        border-bottom: none;
 
     }
 
     #top-nav .logo {
         margin: 0 auto;
+        order: 1;
     }
-
-    #top-nav a:hover { 
-        cursor: none;
-        text-decoration-line: none;    
-    }
-
-    .intro-text {
-        width: 100%;
-    }
-
-
-    .intro-img {
-        display: none;
-    }
-
-    .services-info-img {
-        display: none;
-    }
-
-    #services footer div {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-}
-
-/*Begin mobile style*/
-@media (max-width: 500px) {
-
-    #top-nav{
-        
-        flex-flow: column nowrap;
-
-    }
-
-    #top-nav a {
-        width: 100%;
-        text-align: center;
-        padding: 0 0 4% 0;
-        border-bottom: solid 1px gray;
-
-    }
-
-    #top-nav .logo {
-        margin-bottom: 2%;
-        order: -1;
-    }
-
 
     .intro-text {
         width: 100%;
@@ -428,36 +391,72 @@ font-size: 75%;
     }
 
     #double-snippets {
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
     }
 
     #double-snippets article {
-        padding: 0;
-        margin-top: 6%;
+        padding: 0 1% 0 1%;
     }
 
     #triple-snippets {
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
+    }
+
+    #triple-snippets article {
+        padding: 0 1% 0 1%;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+
+    #services footer div {
+        max-width: 100%;
+        margin: 0 auto;
+    }   
+
+} 
+
+/*Begin desktop style*/
+
+@media (min-width: 801px) {
+
+    #top-nav{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
         
+    #top-nav a {
+        width: 14%;
     }
     
-    #triple-snippets article {
-        padding: 0;
-        margin-top: 6%;
-    }
-
-    #service-areas {
+    .intro-text {
+        display: flex;
         flex-flow: column nowrap;
-        justify-content: flex-start;
-        margin: 0 auto;
+        width: 50%;
     }
 
-    .service-area {
-        max-width: 100%;
-        max-height: 48%;
-        margin: 2% 0 0 0;
-        border: solid 1px black;
-        padding: 1% 2% 2% 2%;
-        background-color: lightgray;
+    .intro-img {
+        margin: 0 auto;
+        width: 25%;
+        min-width: 100px;
+        text-align: center;
+        display: flex;
+    }
+
+    #double-snippets article {
+        padding: 0 1% 0 1%;
+        margin-top: 0%;
+    }
+
+    #triple-snippets article {
+        padding: 0 1% 0 1%;
+        margin-top: 0%;
+    }
 
 }
+

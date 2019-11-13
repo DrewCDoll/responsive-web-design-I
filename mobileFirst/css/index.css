@@ -358,7 +358,6 @@ font-size: 75%;
 
     #top-nav{
         flex-flow: row wrap-reverse;
-        margin: 0 auto;
     }
 
     #top-nav a {
@@ -369,11 +368,6 @@ font-size: 75%;
 
     #top-nav .logo {
         margin: 0 auto;
-    }
-
-    #top-nav a:hover { 
-        cursor: none;
-        text-decoration-line: none;    
     }
 
     .intro-text {
@@ -401,7 +395,6 @@ font-size: 75%;
     #top-nav{
         
         flex-flow: column nowrap;
-
     }
 
     #top-nav a {
@@ -459,5 +452,5 @@ font-size: 75%;
         border: solid 1px black;
         padding: 1% 2% 2% 2%;
         background-color: lightgray;
-
+    }
 }
